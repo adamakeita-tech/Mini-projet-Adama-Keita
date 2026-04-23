@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio Professionnel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Accueil -->
+    <header>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#Mon_CV">Mon CV</a>
+            <a href="#conctact">Contact</a> 
+        </nav>
+        <section id="accueil">
+            <h1>Bonjour, je suis Adama Keita</h1>
+            <img src="/image/ma-photo.jpg" alt="Photo de Adama Keita" class="profile-pic">
+            <p>Etudiant passionné par les nouvelles technologies et le développement logiciel, j'ai developpé des compétences analytiques, une rigueur scientifique ainsi qu'une capacité de résolution de problèmes, je crée des solutions numériques simples et efficaces.</p>
+            <a href="mailto:adamakeita0201@gmail.com">email: adamakeita0201@gmail.com</a>
+        
+        </section>
+    </header>
+
+    <!-- Compétences -->
+    <section id="competences">
+        <h2>Mes Compétences</h2>
+        <ul>
+            <li>HTML5 / CSS3</li>
+            <li>JavaScript (notion basique)</li>
+            <li>Visual studio code (basique)</li>
+            <li>Python (basique)</li>
+            <li>Gestion de projet</li>
+            <li>Tailwind CSS</li>
+        </ul>
+     </section>
+
+    <!-- Projets -->
+    <section id="projets">
+    <h2>Mes Projets</h2>
+    <div class="projets-grid">
+        
+        <!-- Projet 1 -->
+        <article class="projet-card">
+            <div class="projet-img">
+                <!-- Tu peux remplacer par une vraie image plus tard -->
+                <span>💻</span> 
+            </div>
+            <div class="projet-content">
+                <h3>Calculatrice Intelligente</h3>
+                <p>Une application web développée en JavaScript permettant de réaliser des calculs complexes avec un historique.</p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="#" class="projet-link">Voir le code</a>
+            </div>
+        </article>
+
+        <!-- Projet 2 -->
+        <article class="projet-card">
+            <div class="projet-img">
+                <span>🌐</span>
+            </div>
+            <div class="projet-content">
+                <h3>Site de Quiz</h3>
+                <p>Un test interactif sur les bases de la programmation avec un système de score en temps réel.</p>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Flask</span>
+                </div>
+                <a href="https://github.com/adamakeita-tech/Mini-projet-Adama-Keita.git" class="projet-link">Voir le projet</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+    <!-- Formations et Expériences -->
+    <section id="parcours">
+        <h2>Formations & Expériences</h2>
+        <div class="item">
+            <span class="date">Juillet 2025 - Août 2025 : Formation informatique- initation à l'intelligence artificielle</span>
+            <p><strong>KM Digital</strong></p>
+        </div>
+        <div class="item">
+            <span class="dates">Novembre 2024 - Juillet 2025 : 2ème année licence Mine-géoligie et pétrole</span>
+            <p><strong>Université Privée Modibo kane Dilly</strong></p>
+        </div>
+        <div class="item"> 
+            <span class="date">Novembre 2023 - juillet 2024 : 1ère année licence sciences appliquées </span>
+            <P><strong>Université Privée Modibo Kane Dilly</strong></P>
+        </div>
+        <div class="item">
+            <span class="date">Août 2023 : Baccalauréat Malien, Série Sciences Exactes </span>
+            <p><strong>Lycée Privée Moderne</strong></p>
+        </div>
+        </div>
+    </section>
+
+<!-- Bouton de téléchargement du CV -->
+<div class="cv-download" id="Mon_CV">
+    <a href="/image/CV_Adama_Keita.pdf" target="_blank" class="btn-cv">
+        📄 Voir / Télécharger mon CV (PDF)
+    </a>
+</div>
+    
+</section>
+
+
+    <!-- Contact -->
+ <section id="contact">
+    <h2>Me contacter</h2>
+    <p>Un projet ou une question ? N'hésitez pas à m'écrire !</p>
+    
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Bonjour Adama..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Envoyer le message</button>
+    </form>
+</section>
+        
+
+    <footer>
+        <p> 2026 - Créé avec passion</p>
+    </footer>
+
+</body>
+</html>
