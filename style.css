@@ -1,0 +1,47 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.6; }
+
+/* NAV */
+nav { position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); z-index: 1000; }
+.logo { font-weight: bold; color: #38bdf8; font-size: 1.2rem; }
+.nav-links { display: flex; gap: 25px; }
+.nav-links a { color: #e2e8f0; text-decoration: none; font-weight: 500; }
+
+/* HEADER */
+header { text-align: center; padding: 120px 20px 60px; }
+.profile-pic { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #38bdf8; margin: 20px 0; }
+.contact-infos { margin-bottom: 20px; opacity: 0.8; }
+.bio { max-width: 700px; margin: 20px auto; font-style: italic; }
+
+/* SECTIONS */
+section { padding: 60px 20px; max-width: 900px; margin: auto; }
+h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #38bdf8; }
+
+/* COMPETENCES GRID */
+.competences-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.comp-card { background: #1e293b; padding: 20px; border-radius: 10px; }
+
+/* PARCOURS TIMELINE */
+.parcours-timeline { border-left: 2px solid #38bdf8; padding-left: 20px; margin-left: 10px; }
+.timeline-item { margin-bottom: 20px; }
+
+/* PROJETS & BOUTONS */
+.projets-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+.projet-card { background: #1e293b; padding: 20px; border-radius: 15px; }
+.btn-lien { display: inline-block; margin-top: 15px; padding: 8px 16px; border: 1px solid #38bdf8; color: #38bdf8; text-decoration: none; border-radius: 5px; }
+.btn-cv { display: inline-block; padding: 12px 25px; background: #38bdf8; color: #000; border-radius: 30px; text-decoration: none; font-weight: bold; }
+
+/* FORM & FOOTER */
+form { display: flex; flex-direction: column; gap: 15px; background: #1e293b; padding: 30px; border-radius: 10px; }
+input, textarea { padding: 12px; border: none; border-radius: 5px; background: #020617; color: white; }
+button { padding: 12px; background: #38bdf8; color: black; font-weight: bold; cursor: pointer; border: none; }
+footer { text-align: center; padding: 20px; background: #020617; }
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: #0f172a; padding: 20px; text-align: center; }
+    .nav-links.active { display: flex; }
+}
